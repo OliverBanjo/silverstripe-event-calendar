@@ -70,10 +70,6 @@ class EventDateTime extends DataObject {
 		return $ret;
 	}
 
-	public function Announcement() {
-		return $this->ClassName == "CalendarAnnouncement";
-	}
-
 	public function MicroformatStart($offset = true) {
 		if(!$this->StartDate)
 			return "";
